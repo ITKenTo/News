@@ -13,12 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-//        binding.recyNewa.layoutManager = LinearLayoutManager(this)
-//        val itemDecoration = DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
-//        binding.recyNewa.addItemDecoration(itemDecoration)
-
         supportFragmentManager.beginTransaction().add(R.id.fragment_, HomeFragment()).commit()
     }
 
