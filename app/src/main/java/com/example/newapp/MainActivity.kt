@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.newapp.databinding.ActivityMainBinding
 import com.example.newapp.ui.fragment.HomeFragment
+import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
+
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
