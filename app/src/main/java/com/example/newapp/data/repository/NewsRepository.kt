@@ -5,8 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import com.example.newapp.data.network.NewApi
 import com.example.newapp.data.model.BaseApiResponse
 import com.example.newapp.data.model.NewModel
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class NewsRepository(private val api: NewApi) {
+
+class NewsRepository @Inject constructor(private val api: NewApi) {
 
     private val _newLiveData= MutableLiveData<BaseApiResponse<NewModel>>()
 
